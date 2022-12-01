@@ -1,0 +1,19 @@
+.footer__heading
+	font-size: $fz
+	margin-bottom: 0
+	font-weight: 400
+	text-transform: uppercase
+	position: relative
+	font-size: $fz
+	font-family: "stolzl_book"
+	padding-left: 20px
+	&::before
+		position: absolute
+		content: "©"
+		left: 0
+		top: 0px
+		width: 20px
+		height: 20px
+		font-size: 28px
+		@media (max-width: $mobile)
+			left: -2px

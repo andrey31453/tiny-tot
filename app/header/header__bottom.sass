@@ -1,0 +1,23 @@
+.header__bottom__item
+	width: 235px
+	min-height: 80px
+	padding-left: $p
+	padding-right: $p
+	position: relative
+	align-items: flex-start
+	&::before
+		position: absolute
+		content: ''
+
+		top: 0
+		bottom: 0
+		left: 0
+		width: 1px
+
+		background-color: $c
+	@media (max-width: $mobile)
+		min-height: 25px
+		&:not(:last-child)
+			margin-bottom: 10px
+		.__desktop
+			display: none

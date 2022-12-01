@@ -1,0 +1,27 @@
+.footer
+	padding-top: 0
+	padding-bottom: 0
+	font-family: "stolzl_book"
+	.__container
+		padding-top: 80px
+		padding-bottom: 80px
+		position: relative
+		@media (max-width: $mobile)
+			padding-top: $psec_m_2
+			padding-bottom: $psec_m_2
+		&::before
+			position: absolute
+			content: ''
+
+			top: 0
+			left: 0
+			right: 0
+			height: 1px
+
+			background-color: $c
+			@media (max-width: 1350px)
+				left: 10%
+				right: 10%
+			@media (max-width: $mobile)
+				left: 10px
+				right: 10px

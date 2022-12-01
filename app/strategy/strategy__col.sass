@@ -1,0 +1,14 @@
+.strategy__col
+	width: 50%
+	&:first-child
+		padding-right: 5%
+		@media (max-width: $mobile)
+			padding-right: 0
+	@media (max-width: $mobile)
+		width: 100%
+		text-align: center
+		& > *
+			margin-left: auto
+			margin-right: auto
+		&:not(.__mobile)
+			display: none

@@ -1,0 +1,54 @@
+.about__texts
+	padding-top: $p
+	padding-bottom: $p
+	@media (max-width: $mobile)
+		text-align: center
+		padding-top: 0
+		padding-bottom: 0
+	.about__image
+		width: 100%
+		height: auto
+		margin-left: auto
+		margin-right: auto
+		margin: $psecinner_m 0
+		@media (min-width: $mobile + 1px)
+			display: none
+	& > *
+		padding: $p
+		@media (max-width: $mobile)
+			max-width: 468px
+			padding: 0
+
+.about__text
+	width: 50%
+	line-height: $lh
+	font-family: "stolzl_light"
+	@media (max-width: $mobile)
+		width: 100%
+		line-height: $lh_m
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 0
+	&:not(.__contrast)
+		font-weight: 600
+	div
+		max-width: 470px
+		@media (max-width: $mobile)
+			max-width: 100%
+	&.__contrast
+		font-family: "stolzl_medium"
+		position: relative
+		span
+			color: $c
+		&::before
+			position: absolute
+			content: ''
+
+			top: 0
+			bottom: 0
+			left: 0
+			width: 1px
+
+			background-color: $c
+			@media (max-width: $mobile)
+				opacity: 0

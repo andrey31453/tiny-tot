@@ -1,0 +1,25 @@
+.brands__item__about
+	position: absolute
+	top: 362px
+	left: 100px
+	width: 160px
+	font-size: 24px
+	padding-right: 20px
+	opacity: 0
+	z-index: 10
+	color: $fc2
+	@media (max-width: $mobile)
+		display: none
+	.brands__item:hover &
+		opacity: 1
+		color: $fc2
+	&::after
+		position: absolute
+		content: ''
+
+		right: 0
+		top: 6px
+		width: 20px
+		height: 20px
+
+		background-image: url('images/brands/icon/link.png')

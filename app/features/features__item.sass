@@ -1,0 +1,27 @@
+.features__heading
+	margin-bottom: 0
+	text-align: center
+.features__item
+	width: 33%
+	max-width: 330px
+	margin-top: 80px
+	margin-bottom: 0
+	text-align: center
+	@media (max-width: $mobile)
+		width: 100%
+		max-width: 460px
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		margin-top: $psecinner_m
+		padding-bottom: 25px
+		&::after
+			position: absolute
+			content: ''
+
+			bottom: 0
+			left: calc(50% - 102px)
+			width: 204px
+			height: 1px
+
+			background-color: $c

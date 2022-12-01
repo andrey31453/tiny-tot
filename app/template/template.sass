@@ -1,0 +1,52 @@
+// html, body
+html,
+body
+	margin: 0
+	font-family: 'stolzl_light'
+	font-size: $fz
+	font-weight: $fw
+	background-color: $bc
+	color: $fc
+	@media (max-width: $mobile)
+		font-size: $fz_m
+// html elements
+ol,
+ul
+	padding-left: $p
+	margin-top: 0
+	margin-bottom: $p
+li
+	margin-bottom: 0.2rem
+
+a
+	text-decoration: none
+	color: inherit
+	cursor: pointer
+	&:hover
+		color: $c
+p
+	margin-top: 0
+	margin-bottom: $p
+
+// input, button
+input,
+button
+	outline: none
+*:focus-visible
+	outline: none
+
+// table
+table
+	caption-side: bottom
+	border-collapse: collapse
+
+*, ::after, ::before
+	box-sizing: border-box
+
+// section
+section
+	padding-top: $psec
+	padding-bottom: $psec
+	@media (max-width: $mobile)
+		padding-top: $psec_m
+		padding-bottom: $psec_m
